@@ -2,3 +2,11 @@
 
 ![image](https://github.com/3mohamed-abdelfattah/REST-APIs-Retrofit/assets/142848460/67c3c3ff-2531-49c9-91bb-1e01652ca9e8)
 
+
+
+https://github.com/square/retrofit
+
+implementation com.squareup.retrofit2:retrofit:2.11.0.
+
+
+implementation 'com.squareup.retrofit2:converter-gson:latest.version'
