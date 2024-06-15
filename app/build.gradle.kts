@@ -40,6 +40,7 @@ android {
 
 dependencies {
 
+    implementation(libs.adapter.rxjava3)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.fragment.ktx)
     implementation(libs.androidx.activity.ktx)
@@ -50,6 +51,9 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.gson.v2110)
     testImplementation(libs.junit)
+    implementation(libs.rxjava)
+    implementation(libs.rxandroid)
+
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
