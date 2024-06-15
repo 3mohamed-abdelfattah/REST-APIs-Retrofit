@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">REST APIs-Retrofit</string>
+    <string name="get_random_joke">Get Random Joke</string>
 </resources>

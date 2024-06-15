@@ -16,7 +16,7 @@ class MainViewModel : ViewModel() {
         getRandomJoke()
     }
 
-    private fun getRandomJoke() {
+    fun getRandomJoke() {
         viewModelScope.launch {
             repository.getRandomJoke().collect {
                 joke.postValue(it)

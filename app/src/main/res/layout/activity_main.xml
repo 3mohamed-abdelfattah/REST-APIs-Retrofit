@@ -41,5 +41,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textSetup" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:onClick="@{()->viewModel.getRandomJoke()}"
+            android:text="@string/get_random_joke"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDelivery" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
