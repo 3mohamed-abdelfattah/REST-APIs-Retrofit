@@ -18,8 +18,9 @@ class MainViewModel : ViewModel() {
 
     private fun getRandomJoke() {
         viewModelScope.launch {
-            val result = repository.getRandomJoke()
-            joke.postValue(result.body())
+            repository.getRandomJoke().collect {
+                joke.postValue(it)
+            }
         }
     }
 
