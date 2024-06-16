@@ -4,11 +4,12 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.restapis_retrofit.model.JokeResponse
+import com.example.restapis_retrofit.model.State
 import kotlinx.coroutines.launch
 
 class MainViewModel : ViewModel() {
 
-    val joke = MutableLiveData<JokeResponse>()
+    val joke = MutableLiveData<State<JokeResponse?>>()
 
     val repository = JokeRepositry()
 

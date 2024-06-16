@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.flow
 class JokeRepositry {
     suspend fun getRandomJoke(): Flow<State<JokeResponse?>> {
         return flow {
-            emit(State.loading)
+            emit(State.Loading)
             val result = API.API_SERVICE.getRandomJoke()
             if (result.isSuccessful) {
                 emit(State.Success(result.body()))
